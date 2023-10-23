@@ -11,9 +11,17 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #efefef;
 }
+h2 {
+  font-size: 2.3em;
+  line-height: 36px;
+}
+h3 {
+  font-size: 1.5em;
+}
 p {
   color: #333333;
-  font-size: 0.85em;
+  font-size: 0.9em;
+  margin: 0.8em 0;
 }
 .container {
   font-weight: 400;
@@ -21,6 +29,7 @@ p {
   margin: auto;
   background-color: white;
 }
+
 a.aButton {
   text-decoration: none;
   list-style: none;
@@ -29,8 +38,9 @@ a.aButton {
   border-radius: 10px;
   padding: 0.5em;
   font-size: 0.9em;
-  background-color: #f28f8f;
+
   color: #333;
+  box-shadow: 2px 2px 2px #f28f8f;
 }
 
 a.aButton:hover {
@@ -57,7 +67,7 @@ header nav ul {
 }
 
 .logo {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-right: 0 4em;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -111,30 +121,40 @@ header nav ul li a:hover {
 /* END OF HOME */
 
 /* ABOUT */
-
+#about {
+  border-top: 2em solid #efefef;
+  border-bottom: 2em solid #efefef;
+}
 .about1,
 .about2,
 .about3 {
   justify-content: space-around;
-  padding: 1.8em 2em;
+
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .article-about {
   max-width: 400px;
-  padding: 2em;
+}
+
+.article-about a {
+  text-decoration: none;
+  color: #f07474;
+  padding: 0.4em 0.4em 0.4em 0;
+}
+
+.article-about a:hover {
+  box-shadow: 1.4px 1.4px #f07474;
 }
 .img-about {
   max-width: 700px;
-  padding: 2em;
 }
 .img-about img {
-  max-width: 40vh;
+  max-width: 55vh;
 }
 .about1 {
   display: flex;
-  padding: 2em;
   align-items: center;
 }
 
@@ -159,7 +179,7 @@ header nav ul li a:hover {
 /* SERVICES */
 #services {
   padding: 6em 0;
-  background-color: #f4f4f4;
+  background-color: #c9c7c7;
 }
 .service-title {
   text-align: center;
@@ -170,7 +190,7 @@ header nav ul li a:hover {
   justify-content: center;
   box-sizing: border-box;
   flex-wrap: wrap;
-  line-height: 2.1em;
+  line-height: 1.7em;
 }
 
 .card {
@@ -178,7 +198,7 @@ header nav ul li a:hover {
   border: 1px solid black;
   border-radius: 4px;
   margin: 10px;
-  padding: 0.8em 1.1em;
+  padding: 0.8em 1.1em 1.6em;
   text-align: center;
   box-shadow: 5px 5px #333;
   overflow: hidden;
@@ -208,6 +228,7 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   align-items: center;
   padding: 8em 0;
+  border-top: 2em solid #efefef;
 }
 .cArticle,
 .cMain,
@@ -221,7 +242,7 @@ header nav ul li a:hover {
   box-shadow: 2px 4px rgb(59, 59, 59);
 }
 .cMain p {
-  line-height: 40px;
+  line-height: 2.4em;
 }
 
 /* END OF CONTACT US */
@@ -234,6 +255,7 @@ aside {
   padding: 1em 0 3.8em 0;
   line-height: 40px;
   background-color: #ff9f9f;
+  flex-wrap: wrap;
 }
 
 aside ul li {
@@ -255,7 +277,7 @@ aside ul li a {
 
 .aside a:hover {
   transition: 0.4s ease;
-  color: white;
+  color: rgb(128, 100, 100);
 }
 
 .asideSocial img {
@@ -265,7 +287,7 @@ aside ul li a {
 }
 
 .asideSocial img:hover {
-  background-color: #e98d8d;
+  background-color: #ce7d7d;
   border-radius: 5px;
   transition: 0.4s ease;
 }
